@@ -1,0 +1,47 @@
+.button {
+  border: 1px solid rgb(242, 242, 242);
+  border-radius: 51px;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  padding: 14px 23px 12px 23px;
+  background-color: transparent;
+}
+
+.scroll-down {
+  position: absolute;
+  width: 51px;
+  height: 50px;
+  border: 1px solid rgb(242, 242, 242);
+  background-color: transparent;
+  border-radius: 50%;
+  bottom: 104px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-down--intro {
+  bottom: 104px;
+}
+
+.scroll-down--services,
+.scroll-down--clients {
+  bottom: 10px;
+  border: 1px solid #29323c;
+}
+
+.team__show-more {
+  color: rgb(242, 242, 242);
+}
+
+.prices__button {
+  position: absolute;
+  color: #e8e8e8;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #485563;
+}
+
+//the end

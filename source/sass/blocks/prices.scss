@@ -1,0 +1,78 @@
+.prices {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 115px;
+}
+
+.prices__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 114px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.prices__item {
+  width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding-top: 65px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.prices__item:not(:last-child) {
+  border-right: 0;
+}
+
+.prices__name,
+.prices__price,
+.prices__term,
+.prices__description {
+  padding-left: 65px;
+  padding-right: 65px;
+  display: block;
+  text-align: center;
+}
+
+
+.prices__name {
+  padding-left: 65px;
+  padding-right: 65px;
+
+  @include font("Montserrat-Bold", 20px, 36px, rgb(72, 85, 99));
+}
+
+
+.prices__price {
+  padding-left: 65px;
+  padding-right: 65px;
+
+  @include font("Montserrat-Regular", 45px, 54px, rgb(72, 85, 99));
+}
+
+.prices__term {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+  @include font("OpenSans-Light", 14px, 23px, rgba(41, 50, 60, 0.8));
+}
+
+.prices__description {
+  padding-left: 65px;
+  padding-right: 65px;
+
+  @include font("OpenSans-Regular", 14px, 40px, rgb(41, 50, 60));
+}
+
+
+.prices__item:hover {
+  border-top: 5px solid rgb(72, 85, 99);
+}
+
+.prices__item:hover .prices__name,
+.prices__item:hover .prices__price {
+  color: rgb(41, 50, 60);
+}
+
+
+//

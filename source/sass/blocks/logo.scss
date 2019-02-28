@@ -1,0 +1,30 @@
+.logo {
+  display: block;
+  font-family: "Airbag", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+  color: rgb(232, 232, 232);
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: grey;
+}
+
+.logo:active {
+  color: #f5f5f5;
+}
+
+.logo--footer {
+  color: inherit;
+}
+
+.logo--footer:hover {
+  color: #485563;
+}
+
+.logo--footer:active {
+  color: #525961;
+}
+//

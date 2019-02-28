@@ -1,0 +1,34 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-toggle {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  margin-left: 60px;
+}
+
+//the end

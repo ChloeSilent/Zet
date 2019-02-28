@@ -1,0 +1,25 @@
+.clients {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 145px;
+}
+
+.clients__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.client__text {
+  @include font("OpenSans-Regular", 16px, 26px, #29323c);
+}
+
+.client__name {
+  @include font("Montserrat-Bold", 15px, 20px, #29323c);
+}
+
+.client__position {
+  @include font("Montserrat-Regular", 13px, 20px, #29323c);
+}
+
+//

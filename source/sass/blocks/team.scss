@@ -1,0 +1,30 @@
+.team {
+  background-color: #8b9194;  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 145px;
+}
+
+.team__list,
+.member__contact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team__list {
+  display: flex;
+}
+
+.member {
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.member__name {
+  @include font("Montserrat-Bold", 15px, 20px, #29323c);
+}
+
+.member__position {
+  @include font("Montserrat-Regular", 14px, 20px, #29323c);
+}
+
+//

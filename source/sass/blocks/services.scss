@@ -1,0 +1,29 @@
+.services {
+  margin: 0;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 96px;
+}
+
+.services__list {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.services__item {
+  width: 25%;
+  padding: 0 5px;
+}
+
+.services__heading {
+  @include font("Montserrat-Bold", 16px, 36px, #29323c);
+}
+
+.services__text {
+  @include font("OpenSans-Regular", 14px, 22px, #29323c);
+}
+
+//

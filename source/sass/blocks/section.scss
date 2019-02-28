@@ -1,0 +1,43 @@
+.section {
+  margin: 0;
+  padding: 0;
+  padding-top: 96px;
+  position: relative;
+  text-align: center;
+}
+
+.section__heading {
+  @include font("OpenSans-ExtraBold", 22px, 26px, rgb(41, 50, 60));
+  text-align: center;
+}
+
+.section__heading--white {
+  color: rgb(242, 242, 242);
+}
+
+.section__text {
+  @include font("OpenSans-Regular", 14px, 30px, #29323c);
+  text-align: center;
+  position: relative;
+}
+
+.section__text--white {
+  color: rgb(242, 242, 242);
+}
+
+.section__text::after {
+  content: "";
+  width: 38px;
+  border-bottom: 2px solid rgb(41, 50, 60);
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section__text--white::after {
+  border-bottom: 2px solid rgb(242, 242, 242);
+}
+
+
+//
