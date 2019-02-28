@@ -174,7 +174,9 @@ img {
   bottom: 104px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
+          transform: translateX(-50%);
+  color: #f2f2f2;
+  font-size: 30px; }
 
 .scroll-down--intro {
   bottom: 104px; }
