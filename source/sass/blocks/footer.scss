@@ -2,16 +2,62 @@
   background-color: #f5f5f5;
   color: rgb(41, 50, 60);
   display: flex;
+  justify-content: space-between;
 }
 
 .footer__col {
   display: flex;
 }
 
+.footer__text {
+  @include font("OpenSans-Regular", 14px, 22px, #29323c);
+}
+
 .firm__contacts {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  text-decoration: none;
+  display: flex;
+  font-size: 24px;
+  line-height: 24px;
+  justify-content: center;
+  padding-bottom: 29px;
+
+  .contacts__contact {
+    background-color: #525961;
+    border-radius: 50%;
+    width: 34px;
+    height: 33px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .contacts__contact:hover {
+    background-color: #485563;
+  }
+
+  .contacts__contact:active {
+    background-color: #323334;
+  }
+
+  .fab {
+    color: #f5f5f5;
+    padding-top: 4px;
+  }
+
+  .contacts__contact:hover .fab {
+    color: #f6f6f6;
+  }
+
+  .contacts__contact:active.fab {
+    color: grey;
+  }
+}
+
+.contacts__contact:not(:last-child) {
+  margin-right: 3px;
 }
 
 //

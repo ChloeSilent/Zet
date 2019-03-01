@@ -12,6 +12,26 @@
 
 .client__text {
   @include font("OpenSans-Regular", 16px, 26px, #29323c);
+  position: relative;
+  padding-bottom: 71px;
+}
+
+.client__text::after {
+  position: absolute;
+  content: "\201d ";
+  @include font("Montserrat-Bold", 40px, 66px, #959ba2);
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.client__image-wrapper {
+  width: 65px;
+  margin: 0 auto;
+}
+
+.client__image {
+  max-width: 100%;
 }
 
 .client__name {

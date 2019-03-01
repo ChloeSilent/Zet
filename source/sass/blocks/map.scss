@@ -1,7 +1,17 @@
 .map {
   width: 50%;
+  max-width: 800px;
+  min-width: 320px;
   height: 650px;
   background-color: #cadbe9;
+
+  background-image: url("../img/map@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media #{$retina} {
+    background: url("../img/map@2x.jpg");
+    background-size: 649px auto;
+  }
 }
 
 //

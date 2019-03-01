@@ -9,6 +9,16 @@
   background-color: transparent;
 }
 
+.button:hover {
+  padding: 13px 22px 11px 22px;
+  border: 2px solid grey;
+}
+
+.button:active {
+  border: 2px solid #f5f5f5;
+  padding: 13px 22px 11px 22px;
+}
+
 .scroll-down {
   position: absolute;
   width: 51px;
@@ -21,6 +31,7 @@
   transform: translateX(-50%);
   color: rgb(242, 242, 242);
   font-size: 30px;
+  padding-top: 14px;
 }
 
 .scroll-down--intro {
@@ -45,5 +56,22 @@
   transform: translateX(-50%);
   background-color: #485563;
 }
+
+.prices__button:hover {
+  background-color: #323334;
+}
+
+.prices__button:active {
+  background-color: #525961;
+}
+
+.button--submit {
+  position: absolute;
+  color: #f6f6f6;
+  border-radius: 1px;
+  bottom: -80px;
+  right: 0;
+}
+
 
 //the end

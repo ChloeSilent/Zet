@@ -1,7 +1,17 @@
 .team {
-  background-color: #8b9194;  padding-left: 200px;
+  background-color: #8b9194;
+  padding-left: 200px;
   padding-right: 200px;
-  padding-bottom: 145px;
+  padding-bottom: 33px;
+  padding-top: 94px;
+  min-height: 750px;
+  background-image: url("../img/team-bg@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media #{$retina} {
+    background: url("../img/team-bg@2x.jpg");
+    background-size: 901px auto;
+  }
 }
 
 .team__list,
@@ -11,12 +21,50 @@
   list-style: none;
 }
 
+.member__contact {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  padding-bottom: 29px;
+
+  .fab,
+  .contact-mail {
+    color: #323334;
+  }
+
+  .fab:hover,
+  .contact-mail:hover {
+    color: #485563;
+  }
+
+  .fab:active,
+  .contact-mail:active {
+    color: #525961;
+  }
+}
+
+.member__contact li:not(:last-child) {
+  margin-right: 3px;
+}
+
 .team__list {
   display: flex;
+  padding-top: 85px;
 }
 
 .member {
   background-color: rgba(242, 242, 242, 0.8);
+  margin-bottom: 93px;
+}
+
+.member:not(:last-child) {
+  margin-right: 28px;
+}
+
+.member__image {
+  display: block;
 }
 
 .member__name {

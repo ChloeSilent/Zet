@@ -7,6 +7,8 @@
 }
 
 .section__heading {
+  margin: 0;
+  padding: 0;
   @include font("OpenSans-ExtraBold", 22px, 26px, rgb(41, 50, 60));
   text-align: center;
 }

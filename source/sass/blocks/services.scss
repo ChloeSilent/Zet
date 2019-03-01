@@ -3,6 +3,7 @@
   padding-left: 200px;
   padding-right: 200px;
   padding-bottom: 96px;
+  background-color: #f5f5f5;
 }
 
 .services__list {
@@ -15,11 +16,73 @@
 
 .services__item {
   width: 25%;
-  padding: 0 5px;
+  padding: 212px 5px 103px;
+}
+
+.sevices__img-wrapper {
+  background-color: #2a333d;
+  border-radius: 50%;
+  width: 122px;
+  height: 121px;
+}
+
+.sevices__img {
+  margin: 10px auto;
 }
 
 .services__heading {
   @include font("Montserrat-Bold", 16px, 36px, #29323c);
+  position: relative;
+}
+
+.services__heading::before {
+  position: absolute;
+  content: "";
+  width: 122px;
+  height: 121px;
+  top: -188px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services__heading--RESPONSIVE::before {
+  background-image: url("../img/laptop@1x.png");
+  background-repeat: no-repeat;
+
+  @media #{$retina} {
+    background: url("../img/laptop@2x.png");
+    background-size: 120px auto;
+  }
+}
+
+.services__heading--EASY::before {
+  background-image: url("../img/equalizer@1x.png");
+  background-repeat: no-repeat;
+
+  @media #{$retina} {
+    background: url("../img/equalizer@2x.png");
+    background-size: 120px auto;
+  }
+}
+
+.services__heading--SEO::before {
+  background-image: url("../img/map@1x.png");
+  background-repeat: no-repeat;
+
+  @media #{$retina} {
+    background: url("../img/map@2x.png");
+    background-size: 120px auto;
+  }
+}
+
+.services__heading--LOVE::before {
+  background-image: url("../img/heart@1x.png");
+  background-repeat: no-repeat;
+
+  @media #{$retina} {
+    background: url("../img/heart@2x.png");
+    background-size: 120px auto;
+  }
 }
 
 .services__text {
