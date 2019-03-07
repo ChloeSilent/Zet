@@ -46,6 +46,7 @@ body {
 
 img {
   width: 100%;
+  max-width: 100%;
   height: auto; }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -240,7 +241,8 @@ img {
   border: 1px solid #29323c; }
 
 .team__show-more {
-  color: #f2f2f2; }
+  color: #f2f2f2;
+  padding: 11px 23px 8px 22px; }
 
 .prices__button {
   position: absolute;
@@ -381,12 +383,11 @@ img {
   display: block; }
 
 .clients {
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-bottom: 145px; }
+  padding-bottom: 96px; }
 
 .clients__list {
-  margin: 0;
+  max-width: 1170px;
+  margin: 0 auto;
   padding: 0;
   padding-top: 51px;
   list-style: none;
@@ -476,10 +477,8 @@ img {
 
 .team {
   background-color: #8b9194;
-  padding-left: 200px;
-  padding-right: 200px;
   padding-bottom: 33px;
-  padding-top: 94px;
+  padding-top: 95px;
   min-height: 750px;
   background-image: url("../img/team-bg@1x.jpg");
   background-repeat: no-repeat; }
@@ -488,63 +487,115 @@ img {
       background: url("../img/team-bg@2x.jpg");
       background-size: 901px auto; } }
 
-.team__list,
 .member__contact {
   margin: 0;
   padding: 0;
-  list-style: none; }
-
-.member__contact {
   text-decoration: none;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 29px; }
-  .member__contact .fab,
+  padding-bottom: 33px; }
+  .member__contact .contact:not(.contact--mail) {
+    background-color: #323334;
+    border-radius: 50%;
+    padding-top: 2px;
+    width: 25px;
+    height: 24px; }
+  .member__contact .contact--mail {
+    background-color: transparent; }
+  .member__contact .fab {
+    color: #c4c9cc;
+    font-size: 18px;
+    line-height: 18px; }
+  .member__contact .contact:not(.contact--mail):hover {
+    background-color: #485563; }
+  .member__contact .contact:not(.contact--mail):active {
+    background-color: #525961; }
   .member__contact .contact-mail {
-    color: #323334; }
-  .member__contact .fab:hover,
+    color: #323334;
+    font-size: 24px;
+    line-height: 24px; }
   .member__contact .contact-mail:hover {
     color: #485563; }
-  .member__contact .fab:active,
   .member__contact .contact-mail:active {
     color: #525961; }
 
 .member__contact li:not(:last-child) {
-  margin-right: 3px; }
+  margin-right: 5px; }
 
 .team__list {
+  list-style: none;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 85px; }
+  padding-top: 83px; }
 
 .member {
   background-color: rgba(242, 242, 242, 0.8);
-  margin-bottom: 93px; }
+  margin-bottom: 91px; }
 
 .member:not(:last-child) {
-  margin-right: 28px; }
+  margin-right: 30px; }
 
 .member__image {
-  display: block; }
+  display: block;
+  margin-bottom: 28px; }
 
 .member__name {
   font-family: "Montserrat-Bold", sans-serif;
   font-size: 15px;
   line-height: 20px;
-  color: #29323c; }
+  color: #29323c;
+  margin: 0 auto;
+  margin-bottom: 2px;
+  padding: 0 5px; }
 
 .member__position {
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #29323c; }
+  color: #29323c;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  padding: 0 5px; }
+
+.partners {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 0; }
+
+.partners__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.partners__item {
+  width: 20%;
+  max-width: 20%;
+  padding: 0 10px;
+  margin-top: 65px; }
+
+.partners__item:not(:last-child) {
+  margin-right: 65px; }
+
+.partner__logo {
+  display: block; }
 
 .prices {
   padding-left: 200px;

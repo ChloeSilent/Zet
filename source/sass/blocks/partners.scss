@@ -1,0 +1,31 @@
+.partners {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.partners__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners__item {
+  width: 20%;
+  max-width: 20%;
+  padding: 0 10px;
+  margin-top: 65px;
+}
+
+.partners__item:not(:last-child) {
+  margin-right: 65px;
+}
+
+.partner__logo {
+  display: block;
+}
+
+// the end

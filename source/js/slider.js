@@ -69,6 +69,6 @@
 
   /* вызовы функций */
   showSlides(slideIndex); // базис утановка - функция сразу вызовется и все слайды, кроме первого будут display: none
-  showSlidesOnTimer();
+  // showSlidesOnTimer();
 
 })();
