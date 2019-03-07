@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0 10px;
   margin-bottom: 10px;
+
   @include font("OpenSans-ExtraBold", 25px, 26px, rgb(41, 50, 60));
   text-align: center;
 }
@@ -22,6 +23,7 @@
   margin: 0;
   padding: 0 10px;
   margin-bottom: 20px;
+  
   @include font("OpenSans-Regular", 14px, 20px, #29323c);
   text-align: center;
   position: relative;

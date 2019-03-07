@@ -7,9 +7,19 @@
   var dots = document.querySelectorAll(".slider__dot"); // 2)находим массив переключателей слайда
   var slideIndex = 1;
   /*нам нужна функция, которая будет менять слайды по клику на переключатель => создаем функцию */
-  var showSlides = function (n) { // функция показа слайдов
-    var i; // просто объявим i здесь, что бы потом не объявлять 2 раза
 
+  var hideSlides = function () {
+    slides.forEach(function (element) { // делаем каждый слайд display = "none";
+      element.style.display = "none";
+    });
+  }
+
+  var deactiveControls = function () {
+    dots.forEach(function (dot) { // заменяем класс каждой точки на стиль ненажатой точки;
+      dot.className = dot.className.replace(" active", "");
+    });
+  }
+  var showSlides = function (n) { // функция показа слайдов
 
     if (n > slides.length) { // проверка на дурака, вдруг у нас переданное число(оно передается через currentSlide) больше длины массива слайдов
       slideIndex = 1 // тогда пусть текущий слайд будет 1
@@ -18,31 +28,14 @@
       slideIndex = slides.length // а если это отриц число, то пусть последний
     }
 
-    // for (i = 0; i < slides.length; i++) {
-    //   slides[i].style.display = "none";
-    // }
+    hideSlides();
+    deactiveControls();
 
-    slides.forEach(function (element) { // делаем каждый слайд display = "none";
-      element.style.display = "none";
-    });
-
-
-    // for (i = 0; i < dots.length; i++) {
-    //   dots[i].className = dots[i].className.replace(" active", "");
-    // }
-
-    dots.forEach(function (dot) { // делаем каждый слайд display = "none";
-    dot.className = dot.className.replace(" active", "");
-    });
-
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    slides[slideIndex - 1].style.display = "block"; // выбранный слайд показать
+    dots[slideIndex - 1].className += " active"; // закрасить нужный кружок
 
 
   }
-
-
-
 
   // Thumbnail image controls
   var currentSlide = function (n) { //функция, которая вызывает функцию показа слайда, где slideIndex = числу, которе ему передадут
@@ -56,5 +49,26 @@
     });
   });
 
+
+  /* автоматический слайдер*/
+  var showSlidesOnTimer = function () {
+    var i;
+
+    hideSlides();
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }
+
+    deactiveControls();
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+
+    setTimeout(showSlidesOnTimer, 4000); // Change image every 2 seconds
+  }
+
+  /* вызовы функций */
   showSlides(slideIndex); // базис утановка - функция сразу вызовется и все слайды, кроме первого будут display: none
+  showSlidesOnTimer();
+
 })();
