@@ -1,9 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
   background-color: $white;
   font-family: "OpenSans", "Montserrat", sans-serif;
-  box-sizing: border-box;
 }
 
 img {
@@ -34,15 +43,15 @@ img {
   max-width: 1600px;
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .main-wrapper {
-    min-width: $tablet-width;
+    max-width: $tablet-width;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .main-wrapper {
-    min-width: $desktop-width;
+    max-width: $desktop-width;
   }
 }
 

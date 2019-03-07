@@ -7,20 +7,23 @@
 .clients__list {
   margin: 0;
   padding: 0;
+  padding-top: 51px;
   list-style: none;
+  margin-bottom: 29px;
 }
 
 .client__text {
   @include font("OpenSans-Regular", 16px, 26px, #29323c);
   position: relative;
-  padding-bottom: 71px;
+  padding-bottom: 64px;
 }
 
 .client__text::after {
   position: absolute;
   content: "\201d ";
+
   @include font("Montserrat-Bold", 40px, 66px, #959ba2);
-  bottom: -5px;
+  bottom: 2px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -28,6 +31,7 @@
 .client__image-wrapper {
   width: 65px;
   margin: 0 auto;
+  margin-bottom: 6px;
 }
 
 .client__image {
@@ -35,11 +39,55 @@
 }
 
 .client__name {
+  margin: 0;
+  padding: 0 20px;
+
   @include font("Montserrat-Bold", 15px, 20px, #29323c);
 }
 
 .client__position {
+  margin: 0;
+  padding: 0 20px;
+
   @include font("Montserrat-Regular", 13px, 20px, #29323c);
+}
+
+.clients__slider {
+  text-align: center;
+}
+
+.slider__dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+
+  border: 1px solid #2b3746;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.slider__dot:hover {
+  background-color: #2b3746;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 //

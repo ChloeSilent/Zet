@@ -1,8 +1,9 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 15px 0 0 0;
+  max-width: 1180px;
 }
 
 
@@ -19,16 +20,24 @@
 
 .nav__list {
   list-style: none;
-  display: flex;
+  display: none;
   margin: 0;
   padding: 0;
 }
 
 .nav-toggle {
+  padding: 4px 0 0 0;
   background-color: transparent;
   border: none;
   color: inherit;
   margin-left: 60px;
+  font-size: 14px;
+  line-height: 16px;
+
+
+  svg {
+    margin-left: 10px;
+  }
 }
 
 //the end

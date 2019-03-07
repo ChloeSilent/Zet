@@ -27,7 +27,7 @@
   <script src="js/picturefill.min.js" async></script>
   <!-- Pixel Glass -->
   <!-- <style>
-  html {
+    html {
     background-repeat: no-repeat;
     background-position: 50% 0;
     /* По умолчанию мобильный макет */
@@ -56,7 +56,7 @@
             <li class="nav__item"><a href="#" class="nav__link">Lorem ipsum</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Lorem ipsum dolor</a></li>
           </ul>
-          <button class="nav-toggle">MENU <svg width="30" height="30">
+          <button class="nav-toggle">MENU <svg width="30" height="15">
               <line x1="3" y1="3" x2="25" y2="3" stroke="white" stroke-width="3" />
               <line x1="3" y1="9" x2="25" y2="9" stroke="white" stroke-width="3" />
               <line x1="3" y1="15" x2="25" y2="15" stroke="white" stroke-width="3" />
@@ -83,26 +83,51 @@
         <p class="section__text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
         <ul class="services__list">
           <li class="services__item ">
+            <div class="services__icon">
+              <picture>
+                <source type=”image/webp” srcset="img/webp/img/laptop-transparent@1x.webp 1x, img/webp/img/laptop-transparent@2x.webp 2x">
+                <img class="services__image" src="img/laptop-transparent@1x.png" srcset="img/laptop-transparent@2x.png 2x"
+                  alt="laptop" width="60" height="41">
+              </picture>
+            </div>
             <h3 class="services__heading services__heading--RESPONSIVE">FULLY RESPONSIVE</h3>
             <div class="services__text">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
               viverra
               nulla ut metus varius laoreet.</div>
           </li>
           <li class="services__item">
-
+            <div class="services__icon">
+              <picture>
+                <source type=”image/webp” srcset="img/webp/img/adjust-transparent@1x.webp 1x, img/webp/img/adjust-transparent@2x.webp 2x">
+                <img class="services__image" src="img/adjust-transparent@1x.png" srcset="img/adjust-transparent@2x.png 2x"
+                  alt="adjust" width="42" height="45">
+              </picture>
+            </div>
             <h3 class="services__heading services__heading--EASY">EASY CUSTOMIZE</h3>
             <div class="services__text">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
               justo,
               rhoncus ut, imperdiet a, venenatis vitae.</div>
           </li>
           <li class="services__item">
-
+            <div class="services__icon">
+              <picture>
+                <source type=”image/webp” srcset="img/webp/img/map-transparent@1x.webp 1x, img/webp/img/map-transparent@2x.webp 2x">
+                <img class="services__image" src="img/map-transparent@1x.png" srcset="img/map-transparent@2x.png 2x"
+                  alt="map" width="55" height="55">
+              </picture>
+            </div>
             <h3 class="services__heading services__heading--SEO">SEO READY</h3>
             <div class="services__text">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
               Vivamus elementum semper nisi.</div>
           </li>
           <li class="services__item">
-
+            <div class="services__icon">
+              <picture>
+                <source type=”image/webp” srcset="img/webp/img/heart-transparent@1x.webp 1x, img/webp/img/heart-transparent@2x.webp 2x">
+                <img class="services__image" src="img/heart-transparent@1x.png" srcset="img/heart-transparent@2x.png 2x"
+                  alt="heart" width="61" height="52">
+              </picture>
+            </div>
             <h3 class="services__heading services__heading--LOVE">MADE WITH LOVE</h3>
             <div class="services__text">ecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero
               vulputate
@@ -123,105 +148,105 @@
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-1@1x.webp 1x, img/webp/work-1@2x.webp 2x">
-              <img class="works-item__image" src="img/work-1@1x.jpg" srcset="img/work-1@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-1@1x.jpg" srcset="img/work-1@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-2@1x.webp 1x, img/webp/work-2@2x.webp 2x">
-              <img class="works-item__image" src="img/work-2@1x.jpg" srcset="img/work-2@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-2@1x.jpg" srcset="img/work-2@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-3@1x.webp 1x, img/webp/work-3@2x.webp 2x">
-              <img class="works-item__image" src="img/work-3@1x.jpg" srcset="img/work-3@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-3@1x.jpg" srcset="img/work-3@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-4@1x.webp 1x, img/webp/work-4@2x.webp 2x">
-              <img class="works-item__image" src="img/work-4@1x.jpg" srcset="img/work-4@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-4@1x.jpg" srcset="img/work-4@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-5@1x.webp 1x, img/webp/work-5@2x.webp 2x">
-              <img class="works-item__image" src="img/work-5@1x.jpg" srcset="img/work-5@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-5@1x.jpg" srcset="img/work-5@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-6@1x.webp 1x, img/webp/work-6@2x.webp 2x">
-              <img class="works-item__image" src="img/work-6@1x.jpg" srcset="img/work-6@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-6@1x.jpg" srcset="img/work-6@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-7@1x.webp 1x, img/webp/work-7@2x.webp 2x">
-              <img class="works-item__image" src="img/work-7@1x.jpg" srcset="img/work-7@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-7@1x.jpg" srcset="img/work-7@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-8@1x.webp 1x, img/webp/work-8@2x.webp 2x">
-              <img class="works-item__image" src="img/work-8@1x.jpg" srcset="img/work-8@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-8@1x.jpg" srcset="img/work-8@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-9@1x.webp 1x, img/webp/work-9@2x.webp 2x">
-              <img class="works-item__image" src="img/work-9@1x.jpg" srcset="img/work-9@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-9@1x.jpg" srcset="img/work-9@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-10@1x.webp 1x, img/webp/work-10@2x.webp 2x">
-              <img class="works-item__image" src="img/work-10@1x.jpg" srcset="img/work-10@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-10@1x.jpg" srcset="img/work-10@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-11@1x.webp 1x, img/webp/work-11@2x.webp 2x">
-              <img class="works-item__image" src="img/work-11@1x.jpg" srcset="img/work-11@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-11@1x.jpg" srcset="img/work-11@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-12@1x.webp 1x, img/webp/work-12@2x.webp 2x">
-              <img class="works-item__image" src="img/work-12@1x.jpg" srcset="img/work-12@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-12@1x.jpg" srcset="img/work-12@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-11@1x.webp 1x, img/webp/work-11@2x.webp 2x">
-              <img class="works-item__image" src="img/work-13@1x.jpg" srcset="img/work-13@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-13@1x.jpg" srcset="img/work-13@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-14@1x.webp 1x, img/webp/work-14@2x.webp 2x">
-              <img class="works-item__image" src="img/work-14@1x.jpg" srcset="img/work-14@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-14@1x.jpg" srcset="img/work-14@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
           <li class="works__item">
             <picture>
               <source type=”image/webp” srcset="img/webp/work-15@1x.webp 1x, img/webp/work-15@2x.webp 2x">
-              <img class="works-item__image" src="img/work-15@1x.jpg" srcset="img/work-15@2x.jpg 2x" alt="Пример нашей работы"
+              <img class="works__image" src="img/work-15@1x.jpg" srcset="img/work-15@2x.jpg 2x" alt="Пример нашей работы"
                 width="320" height="200">
             </picture>
           </li>
@@ -237,38 +262,44 @@
         <h2 class="section__heading">HAPPY CLIENTS</h2>
         <p class="section__text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
         <ul class="clients__list">
-          <li class="clients__item client">
-            <div class="client__text">Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang;
-              lek-lekan? Madeg pendhet lenggah, "nanem dipetak dhuwung, dipun awis bokong ayam. gendhis angsal Jawa
-              Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap lisa Leres, lisah, ulem-ulem nedhi
-              gesang manah cangkem: nem aken benter bebucal baita dangu</div>
-            <div class="client__image-wrapper">
-              <img class="client__image" src="img/client@1x.png" srcset="img/client@2x.png 2x" alt="клиент" width="65"
-                height="65">
-            </div>
-            <p class="client__name">Vasily Nganu</p>
-            <p class="client__position">Dropbox Senior Developer</p>
-          </li>
-          <li class="clients__item client">
-            <div class="client__text">Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang;
-              lek-lekan? Madeg pendhet lenggah, "nanem dipetak dhuwung, dipun awis bokong ayam. gendhis angsal Jawa
-              Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap lisa Leres, lisah, ulem-ulem nedhi
-              gesang manah cangkem: nem aken benter bebucal baita dangu</div>
-            <div class="client__image-wrapper">
-              <img class="client__image" src="img/client@1x.png" srcset="img/client@2x.png 2x" alt="клиент" width="65"
-                height="65">
-            </div>
-            <p class="client__name">Vasily Nganu</p>
-            <p class="client__position">Dropbox Senior Developer</p>
-          </li>
-          <li class="clients__item client">
-            <div class="client__text">Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang;
+          <li class="clients__item client fade">
+            <div class="client__text">Slide1 pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang;
               lek-lekan? Madeg pendhet lenggah, "nanem dipetak dhuwung, dipun awis bokong ayam. gendhis angsal Jawa
               Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap lisa Leres, lisah, ulem-ulem nedhi
               gesang manah cangkem: nem aken benter bebucal baita dangu</div>
             <div class="client__image-wrapper">
               <picture>
-                <source type=”image/webp” srcset="img/webp/img/client@1x.webp 1x, img/webp/img/client@1x.webp 2x">
+                <source type=”image/webp” srcset="img/webp/img/client@1x.webp 1x, img/webp/img/client@2x.webp 2x">
+                <img class="client__image" src="img/client@1x.png" srcset="img/client@2x.png 2x" alt="клиент" width="65"
+                  height="65">
+              </picture>
+            </div>
+            <p class="client__name">Vasily Nganu</p>
+            <p class="client__position">Dropbox Senior Developer</p>
+          </li>
+          <li class="clients__item client fade">
+            <div class="client__text">Slide2 pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang;
+              lek-lekan? Madeg pendhet lenggah, "nanem dipetak dhuwung, dipun awis bokong ayam. gendhis angsal Jawa
+              Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap lisa Leres, lisah, ulem-ulem nedhi
+              gesang manah cangkem: nem aken benter bebucal baita dangu</div>
+            <div class="client__image-wrapper">
+              <picture>
+                <source type=”image/webp” srcset="img/webp/img/client@1x.webp 1x, img/webp/img/client@2x.webp 2x">
+                <img class="client__image" src="img/client@1x.png" srcset="img/client@2x.png 2x" alt="клиент" width="65"
+                  height="65">
+              </picture>
+            </div>
+            <p class="client__name">Vasily Nganu</p>
+            <p class="client__position">Dropbox Senior Developer</p>
+          </li>
+          <li class="clients__item client fade">
+            <div class="client__text">Slide3 pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang;
+              lek-lekan? Madeg pendhet lenggah, "nanem dipetak dhuwung, dipun awis bokong ayam. gendhis angsal Jawa
+              Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap lisa Leres, lisah, ulem-ulem nedhi
+              gesang manah cangkem: nem aken benter bebucal baita dangu</div>
+            <div class="client__image-wrapper">
+              <picture>
+                <source type=”image/webp” srcset="img/webp/img/client@1x.webp 1x, img/webp/img/client@2x.webp 2x">
                 <img class="client__image" src="img/client@1x.png" srcset="img/client@2x.png 2x" alt="клиент" width="65"
                   height="65">
               </picture>
@@ -277,6 +308,11 @@
             <p class="client__position">Dropbox Senior Developer</p>
           </li>
         </ul>
+        <div class="clients__slider slider">
+          <span class="slider__dot"></span>
+          <span class="slider__dot"></span>
+          <span class="slider__dot"></span>
+        </div>
         <button class="scroll-down scroll-down--clients">
           <svg width="30" height="30">
             <line x1="3" y1="5" x2="15" y2="15" stroke="#29323c" stroke-width="1" />
@@ -410,43 +446,50 @@
       </section>
       <section class="prices">
         <h2 class="section__heading">PRICING TABLE</h2>
+
         <p class="section__text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
         <ul class="prices__list">
           <li class="prices__item">
-            <h3 class="prices__name">Standard Pack</h3>
-            <span class="prices__price">$50</span>
-            <span class="prices__term">PER MONTH</span>
-            <div class="prices__description">
-              exercitation ullaborum sed do
-              eiusmod tempor incididunt ut quis
-              nostrud exercitation ullamco laboris
+            <div class="prices__not-selected">
+              <h3 class="prices__name">Standard Pack</h3>
+              <span class="prices__price">$50</span>
+              <span class="prices__term">PER MONTH</span>
+              <div class="prices__description">
+                exercitation ullaborum sed do
+                eiusmod tempor incididunt ut quis
+                nostrud exercitation ullamco laboris
+              </div>
+              <button class="button prices__button">SIGN UP</button>
             </div>
-            <button class="button prices__button">SIGN UP</button>
           </li>
           <li class="prices__item">
-            <h3 class="prices__name">Best Pack</h3>
-            <span class="prices__price">$100</span>
-            <span class="prices__term">PER MONTH</span>
-            <div class="prices__description">
-              eiusmod tempor incididunt ut quis
-              nostrud exercitation ullamco laboris
-              minim aliqua labore dolore nostrud
-              aboris ullamco incididunt quis
+            <div class="prices__not-selected">
+              <h3 class="prices__name">Best Pack</h3>
+              <span class="prices__price">$100</span>
+              <span class="prices__term">PER MONTH</span>
+              <div class="prices__description">
+                eiusmod tempor incididunt ut quis
+                nostrud exercitation ullamco laboris
+                minim aliqua labore dolore nostrud
+                aboris ullamco incididunt quis
+              </div>
+              <button class="button prices__button">SIGN UP</button>
             </div>
-            <button class="button prices__button">SIGN UP</button>
           </li>
           <li class="prices__item">
-            <h3 class="prices__name">Vip Pack</h3>
-            <span class="prices__price">$250</span>
-            <span class="prices__term">PER MONTH</span>
-            <div class="prices__description">
-              incididunt ut labore et dolore magna
-              aliqua Ut enim ad minim veniam quis nostrud
-              exercitation ullaborum sed do
-              eiusmod tempor incididunt ut quis
-              nostrud exercitation ullamco laboris
+            <div class="prices__not-selected">
+              <h3 class="prices__name">Vip Pack</h3>
+              <span class="prices__price">$250</span>
+              <span class="prices__term">PER MONTH</span>
+              <div class="prices__description">
+                incididunt ut labore et dolore magna
+                aliqua Ut enim ad minim veniam quis nostrud
+                exercitation ullaborum sed do
+                eiusmod tempor incididunt ut quis
+                nostrud exercitation ullamco laboris
+              </div>
+              <button class="button prices__button">SIGN UP</button>
             </div>
-            <button class="button prices__button">SIGN UP</button>
           </li>
         </ul>
       </section>
@@ -501,6 +544,8 @@
       </footer>
     </main>
   </div>
+  <script src="js/menu.min.js"></script>
+  <script src="js/slider.min.js"></script>
 </body>
 
 </html>

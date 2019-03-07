@@ -1,11 +1,13 @@
 .logo {
   display: block;
   font-family: "Airbag", sans-serif;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 50px;
+  line-height: 54px;
   font-weight: 400;
   color: rgb(232, 232, 232);
   text-decoration: none;
+  margin: 0 0 0 7px;
+  padding: 0;
 }
 
 .logo:hover {
@@ -27,4 +29,5 @@
 .logo--footer:active {
   color: #525961;
 }
+
 //

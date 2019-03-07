@@ -1,8 +1,6 @@
 .services {
   margin: 0;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-bottom: 96px;
+  padding-bottom: 67px;
   background-color: #f5f5f5;
 }
 
@@ -10,83 +8,43 @@
   list-style: none;
   display: flex;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1180px;
 }
 
 .services__item {
   width: 25%;
-  padding: 212px 5px 103px;
-}
-
-.sevices__img-wrapper {
-  background-color: #2a333d;
-  border-radius: 50%;
-  width: 122px;
-  height: 121px;
-}
-
-.sevices__img {
-  margin: 10px auto;
+  padding: 55px 0 30px;
 }
 
 .services__heading {
-  @include font("Montserrat-Bold", 16px, 36px, #29323c);
-  position: relative;
+  @include font("Montserrat-Bold", 16px, 20px, #29323c);
+  margin: 0 auto;
+  padding: 0 5px;
+  margin-bottom: 14px;
 }
 
-.services__heading::before {
-  position: absolute;
-  content: "";
+
+.services__icon {
   width: 122px;
   height: 121px;
-  top: -188px;
-  left: 50%;
-  transform: translateX(-50%);
+  background-image: radial-gradient(#475562, #2a333d);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  margin: 0 auto;
+  padding: 31px;
+  margin-bottom: 35px;
 }
 
-.services__heading--RESPONSIVE::before {
-  background-image: url("../img/laptop@1x.png");
-  background-repeat: no-repeat;
-
-  @media #{$retina} {
-    background: url("../img/laptop@2x.png");
-    background-size: 120px auto;
-  }
-}
-
-.services__heading--EASY::before {
-  background-image: url("../img/equalizer@1x.png");
-  background-repeat: no-repeat;
-
-  @media #{$retina} {
-    background: url("../img/equalizer@2x.png");
-    background-size: 120px auto;
-  }
-}
-
-.services__heading--SEO::before {
-  background-image: url("../img/map@1x.png");
-  background-repeat: no-repeat;
-
-  @media #{$retina} {
-    background: url("../img/map@2x.png");
-    background-size: 120px auto;
-  }
-}
-
-.services__heading--LOVE::before {
-  background-image: url("../img/heart@1x.png");
-  background-repeat: no-repeat;
-
-  @media #{$retina} {
-    background: url("../img/heart@2x.png");
-    background-size: 120px auto;
-  }
+.services__image {
+  display: block;
 }
 
 .services__text {
   @include font("OpenSans-Regular", 14px, 22px, #29323c);
+  padding: 0 10px;
 }
 
 //

@@ -1,15 +1,16 @@
 .section {
   margin: 0;
   padding: 0;
-  padding-top: 96px;
+  padding-top: 94px;
   position: relative;
   text-align: center;
 }
 
 .section__heading {
   margin: 0;
-  padding: 0;
-  @include font("OpenSans-ExtraBold", 22px, 26px, rgb(41, 50, 60));
+  padding: 0 10px;
+  margin-bottom: 10px;
+  @include font("OpenSans-ExtraBold", 25px, 26px, rgb(41, 50, 60));
   text-align: center;
 }
 
@@ -18,7 +19,10 @@
 }
 
 .section__text {
-  @include font("OpenSans-Regular", 14px, 30px, #29323c);
+  margin: 0;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  @include font("OpenSans-Regular", 14px, 20px, #29323c);
   text-align: center;
   position: relative;
 }
@@ -32,7 +36,7 @@
   width: 38px;
   border-bottom: 2px solid rgb(41, 50, 60);
   position: absolute;
-  bottom: -14px;
+  bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
 }

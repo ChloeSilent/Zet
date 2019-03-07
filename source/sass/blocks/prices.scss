@@ -11,28 +11,42 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: stretch;
 }
 
 .prices__item {
-  width: 30%;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  padding-top: 65px;
-  padding-bottom: 120px;
+  width: 390px;
+  padding-top: 41px;
   position: relative;
+  display: flex;
+  align-items: stretch;
 }
 
-.prices__item::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 31px;
-  // background-color: red;
-  top: -36px;
-  left: 50%;
-  transform: translateX(-50%);
+.prices__item:hover {
+  padding-top: 37px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 5px solid rgb(72, 85, 99);
 }
 
-.prices__item:not(:last-child) {
+.prices__item:hover .prices__not-selected {
+  border: none;
+}
+
+.prices__item:hover + .prices__item .prices__not-selected {
+  border-left: none;
+}
+
+.prices__item:hover .prices__button {
+  bottom: 39px;
+}
+
+.prices__not-selected {
+  // padding-top: 65px;
+  padding-bottom: 75px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.prices__item:not(:last-child) .prices__not-selected {
   border-right: 0;
 }
 
@@ -75,21 +89,30 @@
   @include font("OpenSans-Regular", 14px, 40px, rgb(41, 50, 60));
 }
 
+// .prices__item::before {
+//   position: absolute;
+//   content: "";
+//   width: 100%;
+//   height: 31px;
+//   // background-color: red;
+//   top: -36px;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+// .prices__item:hover {
+//   border-top-color: transparent;
+// }
 
-.prices__item:hover {
-  border-top-color: transparent;
-}
+// .prices__item:hover::before {
+//   border-top: 5px solid rgb(72, 85, 99);
+//   border-left: 1px solid rgba(0, 0, 0, 0.5);
+//   border-right: 1px solid rgba(0, 0, 0, 0.5);
+// }
 
-.prices__item:hover::before {
-  border-top: 5px solid rgb(72, 85, 99);
-  border-left: 1px solid rgba(0, 0, 0, 0.5);
-  border-right: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.prices__item:hover .prices__name,
-.prices__item:hover .prices__price {
-  color: rgb(41, 50, 60);
-}
+// .prices__item:hover .prices__name,
+// .prices__item:hover .prices__price {
+//   color: rgb(41, 50, 60);
+// }
 
 
 //

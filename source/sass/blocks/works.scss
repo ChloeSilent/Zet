@@ -1,12 +1,21 @@
+.works {
+  padding-top: 97px;
+}
+
 .works__list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 57px;
 }
 
-.works-item__image {
+.works__item {
+  width: 320px;
+}
+
+.works__image {
   display: block;
 }
 //
