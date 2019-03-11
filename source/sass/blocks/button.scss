@@ -51,6 +51,10 @@
   border: 1px solid #29323c;
 }
 
+.scroll-down--team {
+  bottom: 10px;
+}
+
 .team__show-more {
   color: rgb(242, 242, 242);
   padding: 11px 23px 8px 22px;
@@ -59,10 +63,11 @@
 .prices__button {
   position: absolute;
   color: #e8e8e8;
-  bottom: 40px;
+  bottom: 33px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #485563;
+  padding: 11px 33px 8px 33px;
 }
 
 .prices__button:hover {
@@ -77,9 +82,9 @@
   position: absolute;
   color: #f6f6f6;
   border-radius: 1px;
-  bottom: -80px;
+  bottom: -71px;
   right: 0;
+  padding: 11px 32px 11px 33px;
 }
-
 
 //the end

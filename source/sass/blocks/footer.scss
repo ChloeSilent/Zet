@@ -3,14 +3,23 @@
   color: rgb(41, 50, 60);
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding-left: 212px;
+  padding-top: 36px;
+  padding-right: 215px;
+  padding-bottom: 31px;
 }
 
 .footer__col {
   display: flex;
+
+  align-items: center;
 }
 
 .footer__text {
   @include font("OpenSans-Regular", 14px, 22px, #29323c);
+  margin-left: 34px;
+  margin-right: 22px;
 }
 
 .firm__contacts {
@@ -23,7 +32,7 @@
   font-size: 24px;
   line-height: 24px;
   justify-content: center;
-  padding-bottom: 29px;
+  // padding-bottom: 29px;
 
   .contacts__contact {
     background-color: #525961;
@@ -57,7 +66,7 @@
 }
 
 .contacts__contact:not(:last-child) {
-  margin-right: 3px;
+  margin-right: 10px;
 }
 
 //

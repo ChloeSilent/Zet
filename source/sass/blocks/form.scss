@@ -1,6 +1,6 @@
 .contacts__form {
   max-width: 800px;
-  padding: 114px 190px 115px 170px;
+  padding: 114px 192px 115px 197px;
   width: 50%;
   background-image: url("../img/form-bg@1x.jpg");
   background-repeat: no-repeat;
@@ -18,13 +18,14 @@
 .form__label {
   @include font("Montserrat-Regular", 14px, 36px, #f6f6f6);
   float: left;
+  padding-top: 5px;
 }
 
 .form__input {
   background-color: transparent;
   border: 1px solid #f6f6f6;
   border-radius: 1px;
-  width: 303px;
+  width: 300px;
   height: 44px;
   padding: 10px 20px;
   @include font("Montserrat-Regular", 14px, 36px, #f6f6f6);
@@ -45,6 +46,10 @@
   margin-bottom: 25px;
   clear: both;
   text-align: right;
+}
+
+.form__input--message {
+  height: 145px;
 }
 
 //

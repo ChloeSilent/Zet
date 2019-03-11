@@ -1,7 +1,9 @@
 .partners {
-  width: 1080px;
+  width: 1165px;
   margin: 0 auto;
   padding: 0;
+  // background-color: pink;
+  padding-bottom: 141px;
 }
 
 .partners__list {
@@ -11,18 +13,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .partners__item {
   width: 20%;
   max-width: 20%;
   padding: 0 10px;
-  margin-top: 65px;
+  display: flex;
+  margin-top: 42px;
+  justify-content: center;
+  align-items: center;
 }
 
-.partners__item:not(:last-child) {
-  margin-right: 65px;
-}
+// .partners__item:not(:last-child) {
+//   margin-right: 65px;
+// }
 
 .partner__logo {
   display: block;

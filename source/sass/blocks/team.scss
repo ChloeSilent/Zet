@@ -1,16 +1,29 @@
 .team {
   background-color: #8b9194;
-  padding-bottom: 33px;
+  padding-bottom: 99px;
   padding-top: 95px;
   min-height: 750px;
   background-image: url("../img/team-bg@1x.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 
   @media #{$retina} {
     background: url("../img/team-bg@2x.jpg");
     background-size: 901px auto;
   }
 }
+
+
+.team__list {
+  list-style: none;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  padding-top: 83px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 .member__contact {
   margin: 0;
@@ -70,14 +83,7 @@
   margin-right: 5px;
 }
 
-.team__list {
-  list-style: none;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  padding-top: 83px;
-}
+
 
 .member {
   background-color: rgba(242, 242, 242, 0.8);
