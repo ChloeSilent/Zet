@@ -19,13 +19,13 @@
       console.log("close menu!");
       toggle.classList.remove("open");
       toggle.classList.add("close");
-      menu.style.display = "none";
+      menu.classList.add("nav__list--show");
 
     } else {
       console.log("show menu!");
       toggle.classList.remove("close");
       toggle.classList.add("open");
-      menu.style.display = "flex";
+      menu.classList.remove("nav__list--show");
 
     }
 

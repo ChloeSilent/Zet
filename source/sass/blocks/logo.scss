@@ -30,4 +30,11 @@
   color: #525961;
 }
 
+
+@media (max-width: $tablet-width) {
+
+  .logo {
+    margin: 0 0 0 60px;
+  }
+}
 //

@@ -68,9 +68,14 @@ img {
   min-width: 320px;
   max-width: 1600px; }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .main-wrapper {
-    max-width: 768px; } }
+    max-width: 320px; } }
+
+@media (max-width: 769px) {
+  .main-wrapper {
+    max-width: 769px;
+    width: 769px; } }
 
 @media (max-width: 1602px) {
   .main-wrapper {
@@ -95,6 +100,15 @@ img {
       background: url("../img/intro-bg@2x.jpg");
       background-size: 750px auto; } }
 
+@media (max-width: 769px) {
+  .header {
+    background-repeat: no-repeat; } }
+  @media (max-width: 769px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 769px) and (min-resolution: 144dpi), (max-width: 769px) and (min-resolution: 1.5dppx) {
+    .header {
+      background: url("../img/intro-bg@2x.jpg");
+      background-size: 1601px auto;
+      background-position: center; } }
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,7 +118,8 @@ img {
           justify-content: space-between;
   margin: 0 auto;
   padding: 15px 0 0 0;
-  max-width: 1180px; }
+  max-width: 1180px;
+  position: relative; }
 
 .nav__link {
   text-decoration: none;
@@ -128,6 +143,17 @@ img {
   margin: 0;
   padding: 0; }
 
+.nav__list--show {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 430px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
 .nav-toggle {
   padding: 4px 0 0 0;
   background-color: transparent;
@@ -135,9 +161,23 @@ img {
   color: inherit;
   margin-left: 60px;
   font-size: 14px;
-  line-height: 16px; }
-  .nav-toggle svg {
-    margin-left: 10px; }
+  line-height: 16px;
+  padding-right: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 26%; }
+
+.nav-toggle.open {
+  background-image: url("../img/menu-close.svg"); }
+
+.nav-toggle.close {
+  background-image: url("../img/icon-menu.svg"); }
+
+@media (max-width: 1602px) {
+  .list-container {
+    margin-right: 60px; }
+  .nav__item {
+    text-align: center; } }
 
 .logo {
   display: block;
@@ -164,6 +204,10 @@ img {
 
 .logo--footer:active {
   color: #525961; }
+
+@media (max-width: 769px) {
+  .logo {
+    margin: 0 0 0 60px; } }
 
 .intro {
   margin: 0 auto;
@@ -580,7 +624,7 @@ img {
   padding: 0 5px; }
 
 .partners {
-  width: 1165px;
+  max-width: 1165px;
   margin: 0 auto;
   padding: 0;
   padding-bottom: 141px; }
