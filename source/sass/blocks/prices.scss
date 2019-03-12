@@ -65,11 +65,12 @@
 
 
 .prices__name {
-  padding: 19px 65px 0px 65px;
+  padding: 19px 65px 0 65px;
   // padding-left: 65px;
   // padding-right: 65px;
   margin: 0;
   margin-bottom: 3px;
+
   @include font("Montserrat-Bold", 20px, 36px, rgb(72, 85, 99));
 }
 
@@ -79,12 +80,14 @@
   padding-left: 65px;
   padding-right: 65px;
   margin: 0;
+
   @include font("Montserrat-Regular", 45px, 49px, rgb(72, 85, 99));
 }
 
 .prices__term {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   padding-bottom: 27px;
+
   @include font("OpenSans-Light", 14px, 23px, rgba(41, 50, 60, 0.8));
 }
 

@@ -116,4 +116,26 @@
   padding: 0 5px;
 }
 
+
+@media (max-width: $tablet-width) {
+  .team__list {
+    justify-content: space-around;
+  }
+
+  .member {
+    margin-bottom: 60px;
+  }
+
+  .member:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .team {
+    padding-left: 55px;
+    padding-right: 55px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 //
