@@ -24,6 +24,19 @@
   justify-content: center;
 }
 
+.member {
+  background-color: rgba(242, 242, 242, 0.8);
+  margin-bottom: 91px;
+  transition: all 0.4s ease-in-out;
+}
+
+.member:hover {
+  transform: scale(1.1);
+}
+
+.member:not(:last-child) {
+  margin-right: 30px;
+}
 
 .member__contact {
   margin: 0;
@@ -83,16 +96,6 @@
   margin-right: 5px;
 }
 
-
-
-.member {
-  background-color: rgba(242, 242, 242, 0.8);
-  margin-bottom: 91px;
-}
-
-.member:not(:last-child) {
-  margin-right: 30px;
-}
 
 .member__image {
   display: block;

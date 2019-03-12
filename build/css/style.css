@@ -276,6 +276,14 @@ img {
   font-size: 30px;
   padding-top: 14px; }
 
+.scroll-down svg {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+.scroll-down:hover svg {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4); }
+
 .scroll-down--intro {
   bottom: 104px; }
 
@@ -291,6 +299,9 @@ img {
   color: #f2f2f2;
   padding: 11px 23px 8px 22px; }
 
+.team__show-more:hover {
+  padding: 10px 22px 7px 21px; }
+
 .prices__button {
   position: absolute;
   color: #e8e8e8;
@@ -302,10 +313,15 @@ img {
   padding: 11px 33px 8px 33px; }
 
 .prices__button:hover {
-  background-color: #323334; }
+  background-color: #323334;
+  padding: 10px 32px 7px 32px; }
 
 .prices__button:active {
-  background-color: #525961; }
+  background-color: #525961;
+  padding: 10px 32px 7px 32px; }
+
+.prices__item:hover .prices__button {
+  bottom: 32px; }
 
 .button--submit {
   position: absolute;
@@ -554,6 +570,19 @@ img {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.member {
+  background-color: rgba(242, 242, 242, 0.8);
+  margin-bottom: 91px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+.member:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
+.member:not(:last-child) {
+  margin-right: 30px; }
+
 .member__contact {
   margin: 0;
   padding: 0;
@@ -593,13 +622,6 @@ img {
 
 .member__contact li:not(:last-child) {
   margin-right: 5px; }
-
-.member {
-  background-color: rgba(242, 242, 242, 0.8);
-  margin-bottom: 91px; }
-
-.member:not(:last-child) {
-  margin-right: 30px; }
 
 .member__image {
   display: block;
@@ -705,8 +727,8 @@ img {
 .prices__item:hover + .prices__item .prices__not-selected {
   border-left: none; }
 
-.prices__item:hover .prices__button {
-  bottom: 39px; }
+.prices__item:hover + .prices__item .prices__description {
+  padding-left: 66px; }
 
 .prices__not-selected {
   padding-bottom: 75px;

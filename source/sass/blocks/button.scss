@@ -41,6 +41,14 @@
   padding-top: 14px;
 }
 
+.scroll-down svg {
+  transition: all 0.4s ease-in-out;
+}
+
+.scroll-down:hover svg {
+  transform: scale(1.4);
+}
+
 .scroll-down--intro {
   bottom: 104px;
 }
@@ -60,6 +68,10 @@
   padding: 11px 23px 8px 22px;
 }
 
+.team__show-more:hover {
+  padding: 10px 22px 7px 21px;
+}
+
 .prices__button {
   position: absolute;
   color: #e8e8e8;
@@ -72,10 +84,16 @@
 
 .prices__button:hover {
   background-color: #323334;
+  padding: 10px 32px 7px 32px;
 }
 
 .prices__button:active {
   background-color: #525961;
+  padding: 10px 32px 7px 32px;
+}
+
+.prices__item:hover .prices__button {
+  bottom: 32px;
 }
 
 .button--submit {

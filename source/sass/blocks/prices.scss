@@ -36,9 +36,12 @@
   border-left: none;
 }
 
-.prices__item:hover .prices__button {
-  bottom: 39px;
+.prices__item:hover+.prices__item .prices__description {
+  padding-left: 66px;
 }
+// .prices__item:hover .prices__button {
+//   bottom: 39px;
+// }
 
 .prices__not-selected {
   // padding-top: 65px;
