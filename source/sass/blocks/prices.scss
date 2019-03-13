@@ -39,6 +39,7 @@
 .prices__item:hover+.prices__item .prices__description {
   padding-left: 66px;
 }
+
 // .prices__item:hover .prices__button {
 //   bottom: 39px;
 // }
@@ -55,7 +56,18 @@
 
 .prices__name,
 .prices__price,
-.prices__term,
+.prices__term {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .prices__description {
   padding-left: 65px;
   padding-right: 65px;
@@ -65,10 +77,6 @@
 
 
 .prices__name {
-  padding: 19px 65px 0 65px;
-  // padding-left: 65px;
-  // padding-right: 65px;
-  margin: 0;
   margin-bottom: 3px;
 
   @include font("Montserrat-Bold", 20px, 36px, rgb(72, 85, 99));
@@ -76,11 +84,6 @@
 
 
 .prices__price {
-  padding: 0;
-  padding-left: 65px;
-  padding-right: 65px;
-  margin: 0;
-
   @include font("Montserrat-Regular", 45px, 49px, rgb(72, 85, 99));
 }
 
@@ -94,7 +97,7 @@
 .prices__description {
   padding-left: 65px;
   padding-right: 65px;
-  // padding-top: 78px;
+
   @include font("OpenSans-Regular", 14px, 40px, rgb(41, 50, 60));
   display: flex;
   align-items: center;
@@ -102,30 +105,19 @@
   min-height: 262px;
 }
 
-// .prices__item::before {
-//   position: absolute;
-//   content: "";
-//   width: 100%;
-//   height: 31px;
-//   // background-color: red;
-//   top: -36px;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
-// .prices__item:hover {
-//   border-top-color: transparent;
-// }
+@media (max-width: $tablet-width) {
+  .prices {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
-// .prices__item:hover::before {
-//   border-top: 5px solid rgb(72, 85, 99);
-//   border-left: 1px solid rgba(0, 0, 0, 0.5);
-//   border-right: 1px solid rgba(0, 0, 0, 0.5);
-// }
+  .prices__description {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-// .prices__item:hover .prices__name,
-// .prices__item:hover .prices__price {
-//   color: rgb(41, 50, 60);
-// }
-
-
+  .prices__description {
+    min-height: 400px;
+  }
+}
 //

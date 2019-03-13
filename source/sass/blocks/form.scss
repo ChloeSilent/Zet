@@ -28,6 +28,7 @@
   width: 300px;
   height: 44px;
   padding: 10px 20px;
+
   @include font("Montserrat-Regular", 14px, 36px, #f6f6f6);
 }
 
@@ -36,11 +37,12 @@
   border: 2px solid grey;
 }
 
-.form__input:active {
+.form__input:active,
+.form__input:focus {
   border: 2px solid #f5f5f5;
   padding: 9px 19px;
+  background-color: rgba(white, 0.5);
 }
-
 
 .form-container:not(:last-child) {
   margin-bottom: 25px;
@@ -52,4 +54,9 @@
   height: 145px;
 }
 
+@media (max-width: $tablet-width) {
+  .contacts__form {
+    width: 100%;
+  }
+}
 //

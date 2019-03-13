@@ -26,4 +26,10 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .header {
+    background-repeat: no-repeat;
+  }
+}
+
 //the end

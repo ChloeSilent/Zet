@@ -2,5 +2,9 @@
   display: flex;
 }
 
-
+@media (max-width: $tablet-width) {
+  .contacts {
+    display: block;
+  }
+}
 //
