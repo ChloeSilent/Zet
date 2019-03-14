@@ -59,4 +59,21 @@
     width: 100%;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .contacts__form {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .form-container:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .form__input {
+    width: 100%;
+  }
+}
 //

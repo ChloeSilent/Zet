@@ -32,9 +32,14 @@
 
 
 @media (max-width: $tablet-width) {
-
   .logo {
     margin: 0 0 0 60px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .logo {
+    margin-left: 20px;
   }
 }
 //

@@ -94,4 +94,27 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .footer {
+    display: block;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .logo {
+      margin-left: 0;
+    }
+
+    .footer__text {
+      margin: 0;
+      text-align: center;
+    }
+
+    .footer__col-2 .footer__text {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}
+
 //

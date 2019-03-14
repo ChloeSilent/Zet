@@ -139,8 +139,17 @@
     width: 100%;
   }
 
+  .prices__item:hover {
+    padding-top: 37px;
+    border: none;
+  }
+
   .prices__item:not(:last-child) .prices__not-selected {
     border-right: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .prices__term {
+    padding-bottom: 15px;
   }
 
   .prices__description {

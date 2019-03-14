@@ -125,4 +125,11 @@
     padding: 10px 19px 7px 19px;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .button--submit {
+    bottom: -70px;
+  }
+}
+
 //the end

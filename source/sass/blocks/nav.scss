@@ -88,10 +88,27 @@
 }
 
 
-// @media (max-width: $mobile-width-only) {
-//   .nav {
-//     display: block;
-//     text-align: center;
-//   }
-// }
+@media (max-width: $mobile-width-only) {
+  .nav {
+    padding-top: 0;
+  }
+
+  .sticky {
+    padding-bottom: 9px;
+  }
+
+  .sticky-show {
+    top: 63px;
+  }
+
+  .list-container {
+    margin-right: 20px;
+    padding-top: 5px;
+  }
+
+  .nav-toggle {
+    background-position-y: 60%;
+  }
+}
+
 //the end

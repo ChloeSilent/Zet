@@ -24,7 +24,7 @@
       dot.className = dot.className.replace(" active", "");
     });
   }
-  
+
   var showSlides = function (n, arraySlides, arrayDots) { // функция показа слайдов
 
     if (n > arraySlides.length) { // проверка на дурака, вдруг у нас переданное число(оно передается через currentSlide) больше длины массива слайдов
@@ -48,12 +48,17 @@
     showSlides(slideIndex = n, arraySlides, arrayDots);
   }
 
-  arrayDots.forEach(function (dot, index) { // берем массив переключателей
-    // console.log(index);
-    dot.addEventListener("click", function () { // вешаем на каждый элемент массива слушатель на клик, который вызывает функцию
-      currentSlide(index + 1); // вызовем функцию currentSlide, которой будет передавать индекс элемента массива переключателей + 1, тк у первого элемента индекс = 0
+  var clickOnDot = function (arraySlides, arrayDots) {
+
+    arrayDots.forEach(function (dot, index) { // берем массив переключателей
+      // console.log(index);
+      dot.addEventListener("click", function () { // вешаем на каждый элемент массива слушатель на клик, который вызывает функцию
+        currentSlide(index + 1,arraySlides, arrayDots); // вызовем функцию currentSlide, которой будет передавать индекс элемента массива переключателей + 1, тк у первого элемента индекс = 0
+      });
     });
-  });
+
+  }
+
 
 
   /* автоматический слайдер*/
@@ -75,6 +80,8 @@
 
   /* вызовы функций */
   showSlides(slideIndex, clientsSlides, clientsDots); // базис утановка - функция сразу вызовется и все слайды, кроме первого будут display: none
+  clickOnDot(clientsSlides, clientsDots);
   // showSlidesOnTimer();
-
+  showSlides(slideIndex, pricesSlides, pricesDots); // базис утановка - функция сразу вызовется и все слайды, кроме первого будут display: none
+  clickOnDot(pricesSlides, pricesDots);
 })();
