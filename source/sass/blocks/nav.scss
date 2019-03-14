@@ -34,6 +34,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  background-color: rgba(#2a333d, 0.8);
 }
 
 .nav__item:hover a,
@@ -61,7 +62,19 @@
 
 .nav-toggle.close {
   background-image: url("../img/icon-menu.svg");
+}
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(#2a333d, 0.8);
+  padding-bottom: 21px;
+  z-index: 100;
+}
+
+.sticky-show {
+  top: 90px;
 }
 
 @media (max-width: $desktop-width) {
@@ -74,4 +87,11 @@
   }
 }
 
+
+// @media (max-width: $mobile-width-only) {
+//   .nav {
+//     display: block;
+//     text-align: center;
+//   }
+// }
 //the end

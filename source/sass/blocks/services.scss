@@ -47,4 +47,15 @@
   padding: 0 10px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .services__list {
+    display: block;
+    text-align: center;
+  }
+
+  .services__item {
+    width: 100%;
+  }
+}
+
 //

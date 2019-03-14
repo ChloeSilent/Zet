@@ -1,10 +1,11 @@
 .partners {
-  max-width: 1165px;
+  // max-width: 1165px;
   margin: 0 auto;
-  padding: 0;
-  // background-color: pink;
-  padding-bottom: 141px;
+  padding: 0 217px;
+  width: 100%;
+  padding-bottom: 42px;
   background-color: #f5f5f5;
+  // background-color: pink;
 }
 
 .partners__list {
@@ -33,6 +34,23 @@
 
 .partner__logo {
   display: block;
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .partners {
+    padding: 0 10px 42px 10px;
+  }
+
+  .partners__list {
+    display: block;
+    text-align: center;
+  }
+
+  .partners__item {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 // the end

@@ -115,4 +115,14 @@
   padding: 10px 32px 10px 32px;
 }
 
+@media (max-width: $tablet-width) {
+  .prices__button {
+    padding: 11px 20px 8px 20px;
+  }
+
+  .prices__button:hover,
+  .prices__button:active {
+    padding: 10px 19px 7px 19px;
+  }
+}
 //the end

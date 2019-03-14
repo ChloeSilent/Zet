@@ -1,4 +1,5 @@
 .prices {
+  padding-top: 99px;
   padding-left: 200px;
   padding-right: 200px;
   padding-bottom: 118px;
@@ -68,16 +69,17 @@
 }
 
 
-.prices__description {
-  padding-left: 65px;
-  padding-right: 65px;
-  display: block;
-  text-align: center;
-}
+// .prices__description {
+//   padding-left: 65px;
+//   padding-right: 65px;
+//   display: block;
+//   text-align: center;
+// }
 
 
 .prices__name {
   margin-bottom: 3px;
+  padding-top: 17px;
 
   @include font("Montserrat-Bold", 20px, 36px, rgb(72, 85, 99));
 }
@@ -105,6 +107,10 @@
   min-height: 262px;
 }
 
+.prices__slider {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
   .prices {
     padding-left: 60px;
@@ -114,10 +120,39 @@
   .prices__description {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .prices__description {
     min-height: 400px;
   }
 }
+
+
+@media (max-width: $mobile-width-only) {
+  .prices {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .prices__list {
+    display: block;
+  }
+
+  .prices__item {
+    width: 100%;
+  }
+
+  .prices__item:not(:last-child) .prices__not-selected {
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .prices__description {
+    min-height: 280px;
+    text-align: center;
+  }
+
+  .prices__slider {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
 //

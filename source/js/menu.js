@@ -12,6 +12,8 @@
 
   var toggle = document.querySelector(".nav-toggle");
   var menu = document.querySelector(".nav__list");
+  var navElement = document.querySelector(".nav");
+  var sticky = navElement.offsetTop;
 
   var toggleDisplayMenu = function (e) {
     e.preventDefault();
@@ -31,6 +33,22 @@
 
   };
 
+  var stickNavtoTop = function () {
+    if (window.pageYOffset > sticky) {
+      navElement.classList.add("sticky");
+      menu.classList.add("sticky-show");
+      // console.log("navElement.scrollTop is " + navElement.scrollTop);
+      // console.log("window.pageYOffset is " + window.pageYOffset);
+      // console.log("sticky is " + sticky);
+    } else {
+      navElement.classList.remove("sticky");
+      menu.classList.remove("sticky-show");
+    }
+  }
+
+
   toggle.addEventListener("touchstart", toggleDisplayMenu);
   toggle.addEventListener("click", toggleDisplayMenu);
+
+  window.addEventListener("scroll", stickNavtoTop)
 })();
