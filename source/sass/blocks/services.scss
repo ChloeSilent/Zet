@@ -47,7 +47,7 @@
   padding: 0 10px;
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: 540px) {
   .services__list {
     display: block;
     text-align: center;
@@ -55,6 +55,10 @@
 
   .services__item {
     width: 100%;
+  }
+
+  .services__text {
+    padding: 0 34px;
   }
 }
 

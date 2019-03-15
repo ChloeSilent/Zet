@@ -115,7 +115,7 @@
   padding: 10px 32px 10px 32px;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 1010px) {
   .prices__button {
     padding: 11px 20px 8px 20px;
   }
@@ -125,6 +125,29 @@
     padding: 10px 19px 7px 19px;
   }
 }
+
+@media (max-width: 650px) {
+  .prices__button {
+    padding: 11px 10px 8px 10px;
+  }
+
+  .prices__button:hover,
+  .prices__button:active {
+    padding: 10px 9px 7px 9px;
+  }
+}
+
+
+// @media (max-width: $tablet-width) {
+//   .prices__button {
+//     padding: 11px 20px 8px 20px;
+//   }
+
+//   .prices__button:hover,
+//   .prices__button:active {
+//     padding: 10px 19px 7px 19px;
+//   }
+// }
 
 @media (max-width: $mobile-width-only) {
   .button--submit {

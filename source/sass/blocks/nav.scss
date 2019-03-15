@@ -3,7 +3,12 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 15px 0 0 0;
-  max-width: 1180px;
+  max-width: 1600px;
+  // padding-left: calc((100% - 78%) / 2);
+  // padding-right: calc((100% - 77%) / 2);
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
   position: relative;
 }
 
@@ -67,7 +72,9 @@
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  // right: 0;
+  // left: 0;
+  // width: 100%;
   background-color: rgba(#2a333d, 0.8);
   padding-bottom: 21px;
   z-index: 100;

@@ -82,6 +82,9 @@
   showSlides(slideIndex, clientsSlides, clientsDots); // базис утановка - функция сразу вызовется и все слайды, кроме первого будут display: none
   clickOnDot(clientsSlides, clientsDots);
   // showSlidesOnTimer();
-  showSlides(slideIndex, pricesSlides, pricesDots); // базис утановка - функция сразу вызовется и все слайды, кроме первого будут display: none
-  clickOnDot(pricesSlides, pricesDots);
+
+  // if (window.innerWidth <= 540) {
+  // showSlides(slideIndex, pricesSlides, pricesDots); // базис утановка - функция сразу вызовется и все слайды, кроме первого будут display: none
+  // clickOnDot(pricesSlides, pricesDots);
+  // }
 })();

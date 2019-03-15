@@ -1,7 +1,9 @@
 .prices {
   padding-top: 99px;
-  padding-left: 200px;
-  padding-right: 200px;
+  // padding-left: 200px;
+  // padding-right: 200px;
+  padding-left: calc((100% - 75%) / 2);
+  padding-right: calc((100% - 75%) / 2);
   padding-bottom: 118px;
 }
 
@@ -97,9 +99,10 @@
 }
 
 .prices__description {
-  padding-left: 65px;
-  padding-right: 65px;
-
+  padding-left: calc(100% - 83.33%);
+  padding-right: calc(100% - 83.33%);
+  // padding-right: 65px;
+  // padding-left: 65px;
   @include font("OpenSans-Regular", 14px, 40px, rgb(41, 50, 60));
   display: flex;
   align-items: center;
@@ -113,8 +116,8 @@
 
 @media (max-width: $tablet-width) {
   .prices {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .prices__description {
@@ -125,7 +128,7 @@
 }
 
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: 630px) {
   .prices {
     padding-left: 10px;
     padding-right: 10px;
@@ -136,12 +139,25 @@
   }
 
   .prices__item {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
   }
 
   .prices__item:hover {
     padding-top: 37px;
     border: none;
+  }
+
+  .prices__item:hover .prices__not-selected {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .prices__item:hover+.prices__item .prices__not-selected {
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .prices__item:hover+.prices__item .prices__description {
+    padding-left: 65px;
   }
 
   .prices__item:not(:last-child) .prices__not-selected {
@@ -162,6 +178,45 @@
     text-align: center;
     margin-top: 15px;
   }
+}
+
+@media (max-width: $mobile-width-only) {
+  // .prices {
+  //   padding-left: 10px;
+  //   padding-right: 10px;
+  // }
+
+  // .prices__list {
+  //   display: block;
+  // }
+
+  .prices__item {
+    width: 100%;
+  }
+
+  // .prices__item:hover {
+  //   padding-top: 37px;
+  //   border: none;
+  // }
+
+  // .prices__item:not(:last-child) .prices__not-selected {
+  //   border-right: 1px solid rgba(0, 0, 0, 0.5);
+  // }
+
+  // .prices__term {
+  //   padding-bottom: 15px;
+  // }
+
+  // .prices__description {
+  //   min-height: 280px;
+  //   text-align: center;
+  // }
+
+  // .prices__slider {
+  //   display: block;
+  //   text-align: center;
+  //   margin-top: 15px;
+  // }
 }
 
 //

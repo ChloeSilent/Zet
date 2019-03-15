@@ -95,7 +95,8 @@ img {
   min-height: 750px;
   background-image: url("../img/intro-bg@1x.jpg");
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  max-width: 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .header {
       background: url("../img/intro-bg@2x.jpg");
@@ -103,7 +104,9 @@ img {
 
 @media (max-width: 768px) {
   .header {
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat;
+    padding-left: calc((100% - 83%) / 2);
+    padding-right: calc((100% - 98%) / 2); } }
   @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (min-resolution: 144dpi), (max-width: 768px) and (min-resolution: 1.5dppx) {
     .header {
       background: url("../img/intro-bg@2x.jpg");
@@ -123,7 +126,10 @@ img {
           justify-content: space-between;
   margin: 0 auto;
   padding: 15px 0 0 0;
-  max-width: 1180px;
+  max-width: 1600px;
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
   position: relative; }
 
 .nav__link {
@@ -185,7 +191,6 @@ img {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
   background-color: rgba(42, 51, 61, 0.8);
   padding-bottom: 21px;
   z-index: 100; }
@@ -220,7 +225,6 @@ img {
   font-weight: 400;
   color: #e8e8e8;
   text-decoration: none;
-  margin: 0 0 0 7px;
   padding: 0; }
 
 .logo:hover {
@@ -237,14 +241,6 @@ img {
 
 .logo--footer:active {
   color: #525961; }
-
-@media (max-width: 768px) {
-  .logo {
-    margin: 0 0 0 60px; } }
-
-@media (max-width: 320px) {
-  .logo {
-    margin-left: 20px; } }
 
 .intro {
   margin: 0 auto;
@@ -379,12 +375,19 @@ img {
 .button--submit:active {
   padding: 10px 32px 10px 32px; }
 
-@media (max-width: 768px) {
+@media (max-width: 1010px) {
   .prices__button {
     padding: 11px 20px 8px 20px; }
   .prices__button:hover,
   .prices__button:active {
     padding: 10px 19px 7px 19px; } }
+
+@media (max-width: 650px) {
+  .prices__button {
+    padding: 11px 10px 8px 10px; }
+  .prices__button:hover,
+  .prices__button:active {
+    padding: 10px 9px 7px 9px; } }
 
 @media (max-width: 320px) {
   .button--submit {
@@ -486,12 +489,14 @@ img {
   color: #29323c;
   padding: 0 10px; }
 
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   .services__list {
     display: block;
     text-align: center; }
   .services__item {
-    width: 100%; } }
+    width: 100%; }
+  .services__text {
+    padding: 0 34px; } }
 
 .works {
   padding-top: 97px; }
@@ -733,7 +738,9 @@ img {
 
 .partners {
   margin: 0 auto;
-  padding: 0 217px;
+  padding: 0;
+  padding-left: calc((100% - 78%) / 2);
+  padding-right: calc((100% - 77%) / 2);
   width: 100%;
   padding-bottom: 42px;
   background-color: #f5f5f5; }
@@ -772,9 +779,9 @@ img {
 .partner__logo {
   display: block; }
 
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   .partners {
-    padding: 0 10px 42px 10px; }
+    padding-top: 7px; }
   .partners__list {
     display: block;
     text-align: center; }
@@ -782,10 +789,17 @@ img {
     width: 100%;
     max-width: 100%; } }
 
+@media (max-width: 320px) {
+  .partners {
+    padding: 0 10px 42px 10px; }
+  .partners__item {
+    width: 100%;
+    max-width: 100%; } }
+
 .prices {
   padding-top: 99px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: calc((100% - 75%) / 2);
+  padding-right: calc((100% - 75%) / 2);
   padding-bottom: 118px; }
 
 .prices__list {
@@ -876,8 +890,8 @@ img {
   color: rgba(41, 50, 60, 0.8); }
 
 .prices__description {
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: calc(100% - 83.33%);
+  padding-right: calc(100% - 83.33%);
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 14px;
   line-height: 40px;
@@ -898,24 +912,31 @@ img {
 
 @media (max-width: 768px) {
   .prices {
-    padding-left: 60px;
-    padding-right: 60px; }
+    padding-left: 20px;
+    padding-right: 20px; }
   .prices__description {
     padding-left: 15px;
     padding-right: 15px;
     min-height: 400px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 630px) {
   .prices {
     padding-left: 10px;
     padding-right: 10px; }
   .prices__list {
     display: block; }
   .prices__item {
-    width: 100%; }
+    width: 70%;
+    margin: 0 auto; }
   .prices__item:hover {
     padding-top: 37px;
     border: none; }
+  .prices__item:hover .prices__not-selected {
+    border: 1px solid rgba(0, 0, 0, 0.5); }
+  .prices__item:hover + .prices__item .prices__not-selected {
+    border-left: 1px solid rgba(0, 0, 0, 0.5); }
+  .prices__item:hover + .prices__item .prices__description {
+    padding-left: 65px; }
   .prices__item:not(:last-child) .prices__not-selected {
     border-right: 1px solid rgba(0, 0, 0, 0.5); }
   .prices__term {
@@ -928,12 +949,16 @@ img {
     text-align: center;
     margin-top: 15px; } }
 
+@media (max-width: 320px) {
+  .prices__item {
+    width: 100%; } }
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .contacts {
     display: block; } }
 
@@ -959,7 +984,7 @@ img {
   top: 0;
   left: 0; }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .map {
     width: 100%; } }
 
@@ -1015,7 +1040,7 @@ img {
 .form__input--message {
   height: 145px; }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .contacts__form {
     width: 100%; } }
 
@@ -1040,10 +1065,9 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
-  padding-left: 212px;
   padding-top: 36px;
-  padding-right: 215px;
-  padding-bottom: 31px; }
+  padding-left: calc((100% - 73%) / 2);
+  padding-right: calc((100% - 73%) / 2); }
 
 .footer__col {
   display: -webkit-box;
@@ -1096,17 +1120,18 @@ img {
 .contacts__contact:not(:last-child) {
   margin-right: 10px; }
 
+@media (max-width: 820px) {
+  .footer {
+    padding-left: calc((100% - 96%) / 2);
+    padding-right: calc((100% - 96%) / 2); } }
+
 @media (max-width: 768px) {
   .footer {
-    padding-left: 0;
-    padding-right: 60px;
     padding-bottom: 36px; }
   .footer__col {
     display: block; }
   .footer__text {
     margin-left: 0; }
-  .logo ~ .footer__text {
-    margin-left: 55px; }
   .footer__col-2 {
     padding-top: 14px; } }
 
