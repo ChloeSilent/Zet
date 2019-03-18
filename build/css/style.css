@@ -86,36 +86,20 @@ img {
   display: none; }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  background-color: transparent;
+  z-index: 100;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 14px;
   line-height: 36px;
-  color: #e8e8e8;
-  background-color: #29323c;
-  margin: 0;
-  min-height: 750px;
-  background-image: url("../img/intro-bg@1x.jpg");
-  background-repeat: no-repeat;
-  position: relative;
-  max-width: 100%; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .header {
-      background: url("../img/intro-bg@2x.jpg");
-      background-size: 750px auto; } }
+  color: #e8e8e8; }
 
-@media (max-width: 768px) {
-  .header {
-    background-repeat: no-repeat;
-    padding-left: calc((100% - 83%) / 2);
-    padding-right: calc((100% - 98%) / 2); } }
-  @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (min-resolution: 144dpi), (max-width: 768px) and (min-resolution: 1.5dppx) {
-    .header {
-      background: url("../img/intro-bg@2x.jpg");
-      background-size: 1601px auto;
-      background-position: center; } }
-
-@media (max-width: 320px) {
-  .header {
-    background-repeat: no-repeat; } }
+.sticky-show {
+  background-color: rgba(42, 51, 61, 0.8); }
 
 .nav {
   display: -webkit-box;
@@ -125,16 +109,21 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  padding: 15px 0 0 0;
   max-width: 1600px;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
   padding-left: calc((100% - 78%) / 2);
   padding-right: calc((100% - 77%) / 2);
-  width: 100%;
-  position: relative; }
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 .nav__link {
   text-decoration: none;
-  color: inherit; }
+  font-family: "OpenSans-Light", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  color: #e8e8e8; }
 
 .list-container {
   display: -webkit-box;
@@ -155,19 +144,31 @@ img {
   padding: 0; }
 
 .nav__list--show {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  z-index: 2;
-  width: 430px;
+  z-index: 102;
+  width: 100%;
   top: 0;
-  left: 50%;
+  left: 74%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: rgba(42, 51, 61, 0.8); }
+  padding-top: 13px; }
+
+.nav__item {
+  border-bottom: 1px solid #e8e8e8; }
 
 .nav__item:hover a,
 .nav__item:active a {
   color: gray; }
+
+.nav__item:hover,
+.nav__item:active {
+  border-bottom-color: gray; }
+
+.nav__item:not(:last-child) {
+  margin-right: 20px; }
 
 .nav-toggle {
   padding: 4px 0 0 0;
@@ -180,7 +181,8 @@ img {
   padding-right: 30px;
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: 26%; }
+  background-size: 26%;
+  z-index: 110; }
 
 .nav-toggle.open {
   background-image: url("../img/menu-close.svg"); }
@@ -188,34 +190,32 @@ img {
 .nav-toggle.close {
   background-image: url("../img/icon-menu.svg"); }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  background-color: rgba(42, 51, 61, 0.8);
-  padding-bottom: 21px;
-  z-index: 100; }
-
-.sticky-show {
-  top: 90px; }
-
-@media (max-width: 1602px) {
-  .list-container {
-    margin-right: 60px; }
-  .nav__item {
-    text-align: center; } }
-
-@media (max-width: 320px) {
+@media (max-width: 935px) {
   .nav {
-    padding-top: 0; }
-  .sticky {
-    padding-bottom: 9px; }
-  .sticky-show {
-    top: 63px; }
-  .list-container {
-    margin-right: 20px;
-    padding-top: 5px; }
-  .nav-toggle {
-    background-position-y: 60%; } }
+    padding-left: calc((100% - 90%) / 2);
+    padding-right: calc((100% - 90%) / 2); }
+  .nav__list--show {
+    top: 84px;
+    text-align: center;
+    left: 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    padding-top: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 5px; } }
+
+@media (min-width: 320px) and (max-width: 825px) {
+  .nav {
+    padding-left: calc((100% - 90%) / 2);
+    padding-right: calc((100% - 95%) / 2); }
+  .nav__list--show {
+    top: 84px;
+    background-color: rgba(42, 51, 61, 0.8);
+    display: block;
+    padding-bottom: 0; }
+  .nav__item:not(:last-child) {
+    margin-right: 0; } }
 
 .logo {
   display: block;
@@ -248,24 +248,47 @@ img {
   max-width: 820px;
   padding: 0;
   padding-top: 196px;
-  padding-bottom: 167px; }
-
-.intro__heading {
-  margin: 0 auto;
-  margin-bottom: 26px;
-  font-family: "Montserrat-Bold", sans-serif;
-  font-size: 33px;
-  line-height: 40px;
+  padding-bottom: 167px;
+  background-color: #29323c;
+  min-height: 750px;
+  background-image: url("../img/intro-bg@1x.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 100%;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 36px;
   color: #e8e8e8; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .intro {
+      background: url("../img/intro-bg@2x.jpg");
+      background-size: 750px auto; } }
+  .intro .intro__heading {
+    margin: 0 auto;
+    margin-bottom: 26px;
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 33px;
+    line-height: 40px;
+    color: #e8e8e8; }
+  .intro .intro__text {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    color: #e8e8e8;
+    max-width: 670px; }
 
-.intro__text {
-  margin: 0 auto;
-  margin-bottom: 30px;
-  font-family: "OpenSans-Light", sans-serif;
-  font-size: 17px;
-  line-height: 25px;
-  color: #e8e8e8;
-  max-width: 670px; }
+@media (max-width: 768px) {
+  .intro {
+    background-repeat: no-repeat;
+    padding-left: calc((100% - 83%) / 2);
+    padding-right: calc((100% - 98%) / 2); } }
+  @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (min-resolution: 144dpi), (max-width: 768px) and (min-resolution: 1.5dppx) {
+    .intro {
+      background: url("../img/intro-bg@2x.jpg");
+      background-size: 1601px auto;
+      background-position: center; } }
 
 @media (max-width: 320px) {
   .intro {
