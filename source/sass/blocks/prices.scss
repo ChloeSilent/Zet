@@ -13,6 +13,7 @@
   padding-top: 71px;
   list-style: none;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: stretch;
 }
@@ -70,15 +71,6 @@
   align-items: center;
 }
 
-
-// .prices__description {
-//   padding-left: 65px;
-//   padding-right: 65px;
-//   display: block;
-//   text-align: center;
-// }
-
-
 .prices__name {
   margin-bottom: 3px;
   padding-top: 17px;
@@ -101,13 +93,12 @@
 .prices__description {
   padding-left: calc(100% - 83.33%);
   padding-right: calc(100% - 83.33%);
-  // padding-right: 65px;
-  // padding-left: 65px;
   @include font("OpenSans-Regular", 14px, 40px, rgb(41, 50, 60));
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 262px;
+  // width: 390px;
 }
 
 .prices__slider {
@@ -181,42 +172,9 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  // .prices {
-  //   padding-left: 10px;
-  //   padding-right: 10px;
-  // }
-
-  // .prices__list {
-  //   display: block;
-  // }
-
   .prices__item {
     width: 100%;
   }
-
-  // .prices__item:hover {
-  //   padding-top: 37px;
-  //   border: none;
-  // }
-
-  // .prices__item:not(:last-child) .prices__not-selected {
-  //   border-right: 1px solid rgba(0, 0, 0, 0.5);
-  // }
-
-  // .prices__term {
-  //   padding-bottom: 15px;
-  // }
-
-  // .prices__description {
-  //   min-height: 280px;
-  //   text-align: center;
-  // }
-
-  // .prices__slider {
-  //   display: block;
-  //   text-align: center;
-  //   margin-top: 15px;
-  // }
 }
 
 //

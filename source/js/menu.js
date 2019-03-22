@@ -20,13 +20,13 @@
     e.preventDefault();
 
     if (toggle.classList.contains("open")) {
-      console.log("menu is open now");
+      // console.log("menu is open now");
       toggle.classList.remove("open");
       toggle.classList.add("close");
       menu.classList.add("nav__list--show");
 
     } else {
-      console.log("menu has been closed");
+      // console.log("menu has been closed");
       toggle.classList.add("open");
       toggle.classList.remove("close");
       menu.classList.remove("nav__list--show");
@@ -57,7 +57,7 @@
 
 
   toggle.addEventListener("click", function () {
-    console.log("it has been clicked!!");
+    // console.log("it has been clicked!!");
   });
 
 

@@ -14,16 +14,25 @@
   /*нам нужна функция, которая будет менять слайды по клику на переключатель => создаем функцию */
 
   var hideSlides = function (arraySlides) {
-    arraySlides.forEach(function (slide) { // делаем каждый слайд display = "none";
-      slide.style.display = "none";
-    });
-  }
+    // arraySlides.forEach(function (slide) { // делаем каждый слайд display = "none";
+    //   slide.style.display = "none";
+    // });
+    /*для IE11, то, что выше*/
+    for (var i = 0; i < arraySlides.length; i++) {
+      arraySlides[i].style.display = "none";
+    };
+
+  };
 
   var deactiveControls = function (arrayDots) {
-    arrayDots.forEach(function (dot) { // заменяем класс каждой точки на стиль ненажатой точки;
-      dot.className = dot.className.replace(" active", "");
-    });
-  }
+    // arrayDots.forEach(function (dot) { // заменяем класс каждой точки на стиль ненажатой точки;
+    //   dot.className = dot.className.replace(" active", "");
+    // });
+/*для IE11, то, что выше*/
+    for (var i = 0; i < arrayDots.length; i++) {
+      arrayDots[i].className = arrayDots[i].className.replace(" active", "");
+    }
+  };
 
   var showSlides = function (n, arraySlides, arrayDots) { // функция показа слайдов
 
@@ -32,7 +41,7 @@
     }
     if (n < 1) {
       slideIndex = arraySlides.length // а если это отриц число, то пусть последний
-    }
+    };
 
     hideSlides(arraySlides);
     deactiveControls(arrayDots);
@@ -50,14 +59,29 @@
 
   var clickOnDot = function (arraySlides, arrayDots) {
 
-    arrayDots.forEach(function (dot, index) { // берем массив переключателей
-      // console.log(index);
-      dot.addEventListener("click", function () { // вешаем на каждый элемент массива слушатель на клик, который вызывает функцию
-        currentSlide(index + 1,arraySlides, arrayDots); // вызовем функцию currentSlide, которой будет передавать индекс элемента массива переключателей + 1, тк у первого элемента индекс = 0
-      });
-    });
+    // arrayDots.forEach(function (dot, index) { // берем массив переключателей
+    //   // console.log(index);
+    //   dot.addEventListener("click", function () { // вешаем на каждый элемент массива слушатель на клик, который вызывает функцию
+    //     currentSlide(index + 1,arraySlides, arrayDots); // вызовем функцию currentSlide, которой будет передавать индекс элемента массива переключателей + 1, тк у первого элемента индекс = 0
+    //   });
+    // });
 
-  }
+    /*для IE11, то, что выше*/
+    var callBackFunc = function (dot, number, array1, array2) {
+      dot.addEventListener("click", function (evt) { // вешаем на каждый элемент массива слушатель на клик, который вызывает функцию
+            currentSlide(number + 1,array1, array2); // вызовем функцию currentSlide, которой будет передавать индекс элемента массива переключателей + 1, тк у первого элемента индекс = 0
+          });
+    }
+
+
+    for (var index = 0; index < arrayDots.length; index++) {
+
+      var dot = arrayDots[index];
+      var n = index;
+      callBackFunc(dot, n, arraySlides, arrayDots);
+    }
+
+  };
 
 
 
@@ -83,8 +107,4 @@
   clickOnDot(clientsSlides, clientsDots);
   // showSlidesOnTimer();
 
-  // if (window.innerWidth <= 540) {
-  // showSlides(slideIndex, pricesSlides, pricesDots); // базис утановка - функция сразу вызовется и все слайды, кроме первого будут display: none
-  // clickOnDot(pricesSlides, pricesDots);
-  // }
 })();
