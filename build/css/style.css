@@ -831,6 +831,7 @@ img {
   padding-bottom: 118px; }
 
 .prices__list {
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 71px;
@@ -876,7 +877,9 @@ img {
 
 .prices__not-selected {
   padding-bottom: 75px;
-  border: 1px solid rgba(0, 0, 0, 0.5); }
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  max-width: 390px;
+  width: 100%; }
 
 .prices__item:not(:last-child) .prices__not-selected {
   border-right: 0; }
@@ -937,7 +940,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 262px; }
+  min-height: 262px;
+  max-width: 390px;
+  width: 100%; }
 
 .prices__slider {
   display: none; }

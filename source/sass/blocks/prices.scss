@@ -8,6 +8,7 @@
 }
 
 .prices__list {
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 71px;
@@ -52,6 +53,8 @@
   // padding-top: 65px;
   padding-bottom: 75px;
   border: 1px solid rgba(0, 0, 0, 0.5);
+  max-width: 390px;
+  width: 100%;
 }
 
 .prices__item:not(:last-child) .prices__not-selected {
@@ -98,7 +101,8 @@
   align-items: center;
   justify-content: center;
   min-height: 262px;
-  // width: 390px;
+  max-width: 390px;
+  width: 100%;
 }
 
 .prices__slider {
