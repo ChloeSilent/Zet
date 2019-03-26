@@ -1035,7 +1035,7 @@ img {
   border-left: none; }
 
 .prices__item:hover + .prices__item .prices__description {
-  padding-left: 66px; }
+  padding-left: 65px; }
 
 .prices__not-selected {
   padding-bottom: 75px;
@@ -1087,8 +1087,8 @@ img {
   color: rgba(41, 50, 60, 0.8); }
 
 .prices__description {
-  padding-left: calc(100% - 83.33%);
-  padding-right: calc(100% - 83.33%);
+  padding-left: 16.455%;
+  padding-right: 16.71%;
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 14px;
   line-height: 40px;
@@ -1105,6 +1105,10 @@ img {
   min-height: 262px;
   max-width: 390px;
   width: 100%; }
+
+.prices__item:last-child .prices__description {
+  padding-left: 16.495%;
+  padding-right: 16.495%; }
 
 .prices__slider {
   display: none; }
