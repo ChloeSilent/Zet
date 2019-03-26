@@ -100,7 +100,7 @@
   position: absolute;
   color: #f6f6f6;
   border-radius: 1px;
-  bottom: -71px;
+  bottom: -68px;
   right: 0;
   padding: 11px 32px 11px 33px;
 }
@@ -136,18 +136,6 @@
     padding: 10px 9px 7px 9px;
   }
 }
-
-
-// @media (max-width: $tablet-width) {
-//   .prices__button {
-//     padding: 11px 20px 8px 20px;
-//   }
-
-//   .prices__button:hover,
-//   .prices__button:active {
-//     padding: 10px 19px 7px 19px;
-//   }
-// }
 
 @media (max-width: $mobile-width-only) {
   .button--submit {

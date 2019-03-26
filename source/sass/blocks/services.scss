@@ -16,6 +16,10 @@
 .services__item {
   width: 25%;
   padding: 55px 0 30px;
+  animation-name: slideFromTop2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
 .services__heading {

@@ -1,0 +1,61 @@
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-300%) translateX(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%) translateX(-50%);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideFromTop2 {
+  from {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+
+@keyframes fromShadow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/*the end*/

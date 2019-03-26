@@ -1,8 +1,8 @@
 .contacts__form {
   max-width: 800px;
   padding-top: 114px;
-  padding-left: 12%;
-  padding-right: 12.3%;
+  padding-left: 12.3%;
+  padding-right: 12.01%;
   padding-bottom: 115px;
   width: 50%;
   background-image: url("../img/form-bg@1x.jpg");
@@ -22,7 +22,7 @@
 .form__label {
   @include font("Montserrat-Regular", 14px, 36px, #f6f6f6);
   float: left;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .form__input {
@@ -30,7 +30,7 @@
   border: 1px solid #f6f6f6;
   border-radius: 1px;
   width: 300px;
-  height: 44px;
+  height: 45px;
   padding: 10px 20px;
 
   @include font("Montserrat-Regular", 14px, 36px, #f6f6f6);
